@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sayed.myapplication.Ui.Fragments.DonationRequestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/donationrequest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_name"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+    <EditText
+        android:id="@+id/donationrequest_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/donatrequest_age"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+        android:background="@drawable/background"
+        >
+
+        <Spinner
+            android:id="@+id/donationrequest_bloodtypespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/donatrequest_bloodtype"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/donationrequest_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/donatrequest_count"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/donationrequest_hospitalname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/donatrequest_hospitalname"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_s"
+        android:layoutDirection="ltr"
+        android:background="@drawable/background"
+        >
+
+        <Button
+            android:id="@+id/donationrequestbtn_location"
+            android:layout_width="@dimen/dimens_xxl"
+            android:layout_height="@dimen/dimens_xxl"
+            android:padding="@dimen/dimens_s"
+            android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+            />
+        <EditText
+            android:id="@+id/donationrequest_hospitaladdress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dimens_s"
+            android:hint="@string/donatrequest_address"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+
+        >
+        <Spinner
+            android:id="@+id/donationrequest_governspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/govern_array"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_s"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+        android:background="@drawable/background"
+        >
+
+        <Spinner
+            android:id="@+id/donationrequestcity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/city_array"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/donationrequest_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_phonenum"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/donationrequest_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/donatrequest_notes"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:paddingBottom="@dimen/dimens_xxxl"
+        android:paddingTop="@dimen/dimens_sss"
+        android:paddingEnd="@dimen/dimens_m"
+        android:paddingRight="@dimen/dimens_m" />
+    <Button
+        android:id="@+id/donationrequestbtn_sendreeuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/donatrequest_btnsend"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background_blueblack"
+        android:padding="@dimen/dimens_m"
+        />
+
+
+</ScrollView>
+
+
+</LinearLayout>

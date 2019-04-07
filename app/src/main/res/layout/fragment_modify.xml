@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sayed.myapplication.Ui.Fragments.CreataccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        />
+    <EditText
+        android:id="@+id/modify_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/donationlayout_statname"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+    <EditText
+        android:id="@+id/modify_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_post"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_s"
+        android:background="@drawable/background"
+        android:layoutDirection="ltr"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/birth"
+            android:padding="@dimen/dimens_s"
+            android:scaleType="fitXY"
+            />
+        <EditText
+            android:id="@+id/modify_birthdate"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dimens_s"
+            android:text="@string/modify_date"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/modify_bloodtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modify_text"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_s"
+        android:layoutDirection="ltr"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/dimens_s"
+            android:src="@drawable/birth"
+            android:scaleType="fitXY"
+            />
+        <EditText
+            android:id="@+id/modify_lastdonation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dimens_s"
+            android:text="@string/modify_date"
+            android:background="@android:color/transparent"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+
+        >
+        <Spinner
+            android:id="@+id/modify_govern_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/govern_array"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+        android:background="@drawable/background"
+        >
+
+        <Spinner
+            android:id="@+id/modify_cityspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/city_array"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/modify_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_phone"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creataccount_password"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/modify_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creataccount_confirmpassword"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <Button
+        android:id="@+id/modify_btnmodify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modify_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background_blueblack"
+        android:padding="@dimen/dimens_m"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_splash"
+    tools:context="com.example.sayed.myapplication.Ui.Fragments.ChangepassFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimens_xxl"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/txt_size_l"
+        android:text="@string/code_change"
+        android:layout_marginTop="@dimen/dimens_xl"/>
+
+
+    <EditText
+        android:id="@+id/changpass_codeverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/code_verify"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_marginTop="@dimen/dimens_xl"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"/>
+
+    <EditText
+        android:id="@+id/changpass_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_pass"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_marginTop="@dimen/dimens_xl"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"/>
+    <EditText
+        android:id="@+id/changpass_confirmnewpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_pass"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_marginTop="@dimen/dimens_xl"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"/>
+
+
+    <Button
+        android:id="@+id/changpass_btnchangpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_pass"
+        android:textSize="@dimen/txt_size_l"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background_green"
+        android:layout_marginTop="@dimen/dimens_xl"
+        android:textColor="@color/white"
+        android:padding="@dimen/dimens_m"/>
+
+</LinearLayout>

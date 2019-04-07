@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/myinfo"
+
+            android:title="معلوماتي" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notify"
+            android:title="اعدادات الاشعارات" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/favourit"
+            android:title="المفضلة" />
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/main"
+            android:title="الرئيسية" />
+
+
+
+            <item
+                android:id="@+id/nav_instruction"
+                android:icon="@drawable/instruction"
+                android:title="تعليمات المستخدم" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/contactus"
+            android:title="تواصل معنا" />
+            <item
+                android:id="@+id/nav_about"
+                
+                android:icon="@drawable/aboutapp"
+                android:title="عن التطبيق" />
+
+        <item
+            android:id="@+id/nav_evaluation"
+            android:icon="@drawable/evaluation"
+            android:title="تقييم التطبيق علي المتجر" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/exit"
+            android:title="تسجيل الخروج" />
+    </group>
+
+
+</menu>

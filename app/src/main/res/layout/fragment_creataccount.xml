@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sayed.myapplication.Ui.Fragments.CreataccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+ <include layout="@layout/toolbar"
+     android:id="@+id/mytoolbar"
+     />
+    <EditText
+        android:id="@+id/creataccount_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_name"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+    <EditText
+        android:id="@+id/creataccount_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_post"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+
+
+    <EditText
+        android:id="@+id/creataccount_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_birth"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:focusable="false"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+
+    <EditText
+        android:id="@+id/creataccount_bloodtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_bloodtype"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+
+        />
+    <EditText
+        android:id="@+id/creataccount_lastdonationdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_lastdonation"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:focusable="false"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:padding="@dimen/dimens_m"
+
+        >
+       <Spinner
+           android:id="@+id/govern_spinner"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:spinnerMode="dropdown"
+           android:entries="@array/govern_array"
+           android:layoutDirection="rtl"
+           />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dimens_s"
+       android:layout_marginStart="@dimen/dimens_l"
+       android:layout_marginEnd="@dimen/dimens_l"
+       android:padding="@dimen/dimens_m"
+       android:background="@drawable/background"
+       >
+
+      <Spinner
+          android:id="@+id/city_spinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:entries="@array/city_array"
+          android:layoutDirection="rtl"
+           />
+   </LinearLayout>
+
+    <EditText
+        android:id="@+id/creataccount_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_phonenum"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/creataccount_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+    <EditText
+        android:id="@+id/creataccount_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creataccount_confirmpassword"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:inputType="textPassword"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background"
+        android:padding="@dimen/dimens_m"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creataccount_btnregister"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_l"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:layout_marginStart="@dimen/dimens_l"
+        android:layout_marginEnd="@dimen/dimens_l"
+        android:background="@drawable/background_blueblack"
+        android:padding="@dimen/dimens_m"
+        />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimens_xl"
+    android:layoutDirection="ltr"
+    tools:context="com.example.sayed.myapplication.Ui.Fragments.DonationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/dimens_m"
+       android:background="@drawable/background"
+       >
+
+       <Button
+           android:layout_width="@dimen/dimens_xxl"
+           android:layout_height="@dimen/dimens_xxl"
+           android:padding="@dimen/dimens_m"
+           android:layout_marginStart="@dimen/dimens_m"
+           android:background="@drawable/search"
+           android:layout_marginEnd="@dimen/dimens_m" />
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layoutDirection="rtl"
+           android:layout_marginStart="@dimen/dimens_s"
+           android:entries="@array/donate2_array"
+           android:layout_weight="1"
+           android:layout_marginEnd="@dimen/dimens_s">
+
+       </Spinner>
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:entries="@array/donate_array"
+           android:layoutDirection="rtl"
+           android:layout_marginStart="@dimen/dimens_s"
+           android:layout_marginEnd="@dimen/dimens_s"
+           android:layout_weight="1">
+
+       </Spinner>
+
+
+
+
+   </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/donation_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_xl"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
